@@ -1,0 +1,28 @@
+[01-Jan-2021 12:26:22 UTC] PHP Notice:  Undefined index: shop in /home/brightwebcoders/public_html/newshopifyapp/install.php on line 4
+[01-Jan-2021 12:28:01 UTC] PHP Notice:  Undefined index: shop in /home/brightwebcoders/public_html/newshopifyapp/install.php on line 4
+[01-Jan-2021 12:31:43 UTC] PHP Notice:  Undefined index: shop in /home/brightwebcoders/public_html/newshopifyapp/install.php on line 4
+[01-Jan-2021 12:33:38 UTC] PHP Notice:  Undefined index: shop in /home/brightwebcoders/public_html/newshopifyapp/install.php on line 4
+[01-Jan-2021 13:32:35 UTC] PHP Notice:  Undefined index: shop in /home/brightwebcoders/public_html/newshopifyapp/install.php on line 3
+[01-Jan-2021 15:54:06 UTC] PHP Warning:  Use of undefined constant JSON_PRITTY_PRINT - assumed 'JSON_PRITTY_PRINT' (this will throw an Error in a future version of PHP) in /home/brightwebcoders/public_html/newshopifyapp/index.php on line 13
+[01-Jan-2021 16:23:33 UTC] PHP Warning:  Use of undefined constant JSON_PRITTY_PRINT - assumed 'JSON_PRITTY_PRINT' (this will throw an Error in a future version of PHP) in /home/brightwebcoders/public_html/newshopifyapp/index.php on line 13
+[01-Jan-2021 16:23:33 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function prnt_r() in /home/brightwebcoders/public_html/newshopifyapp/index.php:15
+Stack trace:
+#0 {main}
+  thrown in /home/brightwebcoders/public_html/newshopifyapp/index.php on line 15
+[01-Jan-2021 16:28:19 UTC] PHP Warning:  Use of undefined constant JSON_PRITTY_PRINT - assumed 'JSON_PRITTY_PRINT' (this will throw an Error in a future version of PHP) in /home/brightwebcoders/public_html/newshopifyapp/index.php on line 13
+[01-Jan-2021 16:28:19 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function prnt_r() in /home/brightwebcoders/public_html/newshopifyapp/index.php:15
+Stack trace:
+#0 {main}
+  thrown in /home/brightwebcoders/public_html/newshopifyapp/index.php on line 15
+[01-Jan-2021 16:28:56 UTC] PHP Warning:  Use of undefined constant JSON_PRITTY_PRINT - assumed 'JSON_PRITTY_PRINT' (this will throw an Error in a future version of PHP) in /home/brightwebcoders/public_html/newshopifyapp/index.php on line 13
+[01-Jan-2021 16:31:12 UTC] PHP Warning:  Use of undefined constant JSON_PRITTY_PRINT - assumed 'JSON_PRITTY_PRINT' (this will throw an Error in a future version of PHP) in /home/brightwebcoders/public_html/newshopifyapp/index.php on line 13
+[01-Jan-2021 16:32:20 UTC] PHP Warning:  Use of undefined constant JSON_PRITTY_PRINT - assumed 'JSON_PRITTY_PRINT' (this will throw an Error in a future version of PHP) in /home/brightwebcoders/public_html/newshopifyapp/index.php on line 13
+[01-Jan-2021 16:32:20 UTC] PHP Notice:  Undefined index: product in /home/brightwebcoders/public_html/newshopifyapp/index.php on line 16
+[01-Jan-2021 16:33:02 UTC] PHP Warning:  Use of undefined constant JSON_PRITTY_PRINT - assumed 'JSON_PRITTY_PRINT' (this will throw an Error in a future version of PHP) in /home/brightwebcoders/public_html/newshopifyapp/index.php on line 13
+[01-Jan-2021 16:44:50 UTC] PHP Warning:  Use of undefined constant JSON_PRITTY_PRINT - assumed 'JSON_PRITTY_PRINT' (this will throw an Error in a future version of PHP) in /home/brightwebcoders/public_html/newshopifyapp/index.php on line 13
+[01-Jan-2021 18:56:59 UTC] PHP Warning:  Use of undefined constant JSON_PRITTY_PRINT - assumed 'JSON_PRITTY_PRINT' (this will throw an Error in a future version of PHP) in /home/brightwebcoders/public_html/newshopifyapp/index.php on line 13
+[01-Jan-2021 20:13:35 UTC] PHP Warning:  Use of undefined constant JSON_PRITTY_PRINT - assumed 'JSON_PRITTY_PRINT' (this will throw an Error in a future version of PHP) in /home/brightwebcoders/public_html/newshopifyapp/index.php on line 13
+[01-Jan-2021 21:45:47 UTC] PHP Warning:  Use of undefined constant JSON_PRITTY_PRINT - assumed 'JSON_PRITTY_PRINT' (this will throw an Error in a future version of PHP) in /home/brightwebcoders/public_html/newshopifyapp/index.php on line 13
+[05-Jan-2021 08:36:53 UTC] PHP Warning:  Use of undefined constant JSON_PRITTY_PRINT - assumed 'JSON_PRITTY_PRINT' (this will throw an Error in a future version of PHP) in /home/brightwebcoders/public_html/newshopifyapp/index.php on line 13
+[12-Jan-2021 13:12:16 UTC] PHP Warning:  Use of undefined constant JSON_PRITTY_PRINT - assumed 'JSON_PRITTY_PRINT' (this will throw an Error in a future version of PHP) in /home/brightwebcoders/public_html/newshopifyapp/index.php on line 13
+[13-Jan-2021 10:18:10 UTC] PHP Warning:  Use of undefined constant JSON_PRITTY_PRINT - assumed 'JSON_PRITTY_PRINT' (this will throw an Error in a future version of PHP) in /home/brightwebcoders/public_html/newshopifyapp/index.php on line 13

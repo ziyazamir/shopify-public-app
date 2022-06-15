@@ -1,0 +1,27 @@
+{
+    "data": {
+        "products": {
+            "total_count": "1",
+            "items": [
+                {
+                    "name": null,
+                    "sku": null,
+                    "color": "NULL",
+                    "size": "NULL",
+                    "configurable_options": [],
+                    "variants": [],
+                    "short_description": {
+                        "html": null
+                    },
+                    "image": {
+                        "url": null
+                    }
+                }
+            ],
+            "page_info": {
+                "page_size": 20,
+                "current_page": 1
+            }
+        }
+    }
+}
