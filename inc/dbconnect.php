@@ -1,19 +1,13 @@
 <?php
-$username = "shopifyapp";
+$username = "username";
 
-$password = "YSGY54XOR21adZi";
+$password = "password";
 
 $host = "localhost";
 
-$dbname = "shopifyapp";
+$dbname = "dbname";
 
 $shop = $_GET['shop'];
-//echo $shop;
-
-
-
-//$global_link = "shopify.designo.software";
-
 
 
 $dsn = "mysql:host=$host;dbname=$dbname";
@@ -31,30 +25,14 @@ try {
     echo $e->getMessage();
 }
 
-function test_input($data)
-{
 
-    $data = trim($data);
+$meta[1] = "Meta description";
 
-    $data = stripslashes($data);
-
-    $data = htmlspecialchars($data);
-
-    return $data;
-}
-
-$meta[1] = "This Website is an ultimate source of DESIGNNBUY INC and start-ups around the world. It covers all upcoming technology and start-ups in the world.";
-
-$title[1] = "DESIGNNBUY INC";
+$title[1] = "title";
 
 if ($pdo) {
 
-
-    // $query = "SELECT * FROM users WHERE store='$shop'";
-    // $stmt = $pdo->query($query);
-    // $n = $stmt->fetch();
-    // $global_link =  $n['link'];
-    // echo $global_link;
+    //you are connected
 
 } else {
 

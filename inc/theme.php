@@ -4,10 +4,11 @@ $theme = json_decode($theme['response'], JSON_PRETTY_PRINT);
 
 foreach ($theme as $cur_theme) {
     foreach ($cur_theme as $key => $value) {
-        if ($value['role'] === 'main') {
+        if ($value['role'] === 'main') { //current active theme
             $theme_id = $value['id'];
             $theme_role = $value['role'];
 
+            // **********creating a layout file***********
             $layout_file = array(
                 "asset" => array(
                     "key" => "layout/theme.empty.liquid",
@@ -17,7 +18,7 @@ foreach ($theme as $cur_theme) {
                         <meta charset=UTF-8>
                         <meta http-equiv=X-UA-Compatible content=IE=edge>
                         <meta name='viewport' content='user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height, target-densitydpi=device-dpi'>
-                        <title>Designo Editor</title>
+                        <title>App layout</title>
                     </head>
                     <body>
                         {{ content_for_header }}
@@ -31,14 +32,14 @@ foreach ($theme as $cur_theme) {
             $asset = shopify_call($access_token, $shop, "/admin/api/2020-04/themes/" . $theme_id .  "/assets.json", $layout_file, 'PUT');
             $asset = json_decode($asset['response'], JSON_PRETTY_PRINT);
 
-            // echo print_r($asset);
 
+            // **********creating custom name  template file***********
 
             $template_file = array(
                 "asset" => array(
-                    "key" => "templates/page.designo.liquid",
+                    "key" => "templates/page.custom.liquid",
                     "value" => " {% layout 'theme.empty' %}
-                    <iframe id='designtool_iframe' type='text/html' target='_parent' name='Design N Buy' style='display: none;' frameborder='0' scrolling='yes' allowfullscreen=' width='100%' height='100%'></iframe>"
+                    <h1>hello from app</h1>"
                 )
             );
 
@@ -47,15 +48,14 @@ foreach ($theme as $cur_theme) {
 
             // echo print_r($asset);
 
-            // getting all pages
+            // **********creating a page ***********
             $asset = shopify_call($access_token, $shop, "/admin/api/2021-10/pages.json", array(), 'GET');
             $asset = json_decode($asset['response'], JSON_PRETTY_PRINT);
             // echo print_r($asset);
             $page_exist = "false";
-            foreach ($asset["pages"] as $page) {
-                // echo $page['title'];
-                if ($page['handle'] == "designo_editor" && $page['template_suffix'] == "designo") {
-                    // echo "hhelo";
+            foreach ($asset["pages"] as $page) { //check if page already exists
+
+                if ($page['handle'] == "custom_page" && $page['template_suffix'] == "custom") {
                     $page_exist = "true";
                     echo "<script> alert('Already Integrated');</script>";
                     break;
@@ -64,19 +64,17 @@ foreach ($theme as $cur_theme) {
             if ($page_exist == "false") {
                 $page = array(
                     "page" => array(
-                        "title" => "designo",
+                        "title" => "App Page",
                         "body_html" => "",
-                        "template_suffix" => "designo",
-                        "handle" => "designo_editor"
+                        "template_suffix" => "custom",
+                        "handle" => "custom_page"
                     )
                 );
 
                 $asset = shopify_call($access_token, $shop, "/admin/api/2021-10/pages.json", $page, 'POST');
                 $asset = json_decode($asset['response'], JSON_PRETTY_PRINT);
-                // echo print_r($asset);
-                // echo "all things added";
-                echo "<script> alert('Integrated Successfully');</script>";
-                // echo "put code here";
+
+                echo "<script> alert('Page added successfully');</script>";
             }
         }
     }
